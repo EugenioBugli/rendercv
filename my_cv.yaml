@@ -1,0 +1,231 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Eugenio Bugli
+  location: Rome, Italy
+  email: buglieugenio@gmail.com
+  phone: "+393314369299"
+  social_networks:
+    - network: LinkedIn
+      username: eugenio-bugli-004905298
+    - network: ORCID
+      username: 0009-0000-9540-681X
+
+  sections:
+    education:
+      - institution: Sapienza University of Rome
+        area: Artificial Intelligence and Robotics
+        degree: M.Sc.
+        start_date: 2023-10
+        end_date: 2026-01
+        location: Rome, Italy
+        highlights:
+          - "Thesis: *State and Disturbance Estimation in Legged Robots with Differential Dynamic Programming*"
+          - "Advisor: G. Oriolo, Co-Advisor: N. Scianca"
+          - "Final grade: 110 / 110 cum Laude"
+
+      - institution: Sapienza University of Rome
+        area: Computer and Automation Engineering
+        degree: B.Sc.
+        start_date: 2020-09
+        end_date: 2023-07
+        location: Rome, Italy
+        highlights:
+          - "Thesis: *Binary Change Detection su LEVIR-CD+*"
+          - "Advisor: T. Ciarfuglia"
+          - "Final grade: 109 / 110"
+
+      - institution: ISIS Enrico Mattei
+        degree: Scientific Diploma
+        area: High School
+        start_date: 2015-09
+        end_date: 2020-06
+        location: Cerveteri (RM), Italy
+        highlights:
+          - "Final grade: 100 / 100"
+
+    experience:
+      - company: Sapienza University of Rome, DIAG Robotics Lab
+        position: Research Fellow (Borsa di Ricerca)
+        start_date: 2026-04
+        end_date: 2026-09
+        location: Rome, Italy
+        summary: Research fellowship in legged robotics, with focus on control systems and state estimation. Supervisors - G. Oriolo, L. Lanari.
+        highlights:
+          - "**Contact Estimation**: optimization-based approach to estimate contact forces and external disturbances on legged robots (Lite3 quadruped from Deep Robotics, T1 humanoid from Booster Robotics)"
+
+      - company: SPQR Team, RoboCup Soccer HSL (Humanoid Soccer League)
+        position: Robotics Engineer
+        start_date: 2025-08
+        end_date: present
+        location: Rome, Italy
+        summary: "Programming autonomous Booster T1 humanoid robots for the Large Robot division. I have worked on the following tasks:"
+        highlights:
+          - "**Maximus & Circus**: robot framework and physics simulator based on MuJoCo"
+          - "**Contact-estimation-based dribbling**: RL dribbling policy driven by contact and visual information from an optimization-based estimator"
+          - "**Camera and Head Pose Calibration**: extrinsic calibration pipeline for the robot's head"
+          - "**Oraculum**: debug interface to assess behavior and perception during tests and matches"
+        events: |
+          I have participated or will participate in the following events:
+          - **World Humanoid Robot Games (RCAP) 2025**, Beijing, China, August 2025
+          - **German Open 2026**, Cologne, Germany, March 2026 (3rd place)
+          - **RoboCup 2026**, Incheon, South Korea, July 2026
+
+      - company: SPQR Team, RoboCup Soccer SPL (Standard Platform League)
+        position: Robotics Engineer
+        start_date: 2024-05
+        end_date: 2025-07
+        location: Rome, Italy
+        summary: "Programming autonomous NAO robots for the SPL Champions Cup division. I have worked on the following tasks:"
+        highlights:
+          - "**In-Walk Kicks**: dynamic kick motion primitives enabling the robot to kick while walking without interrupting the gait cycle"
+          - "**Technical Challenge 2025**: real-time kinematic routine synchronizing foot trajectory with a rolling ball during locomotion"
+          - "**Team Communication Monitor**: debug interface to check robot behavior and perception during matches"
+        events: |
+          I have participated in the following events:
+          - **RoboCup 2024**, Eindhoven, Netherlands, July 2024 (5th place)
+          - **German Open 2025**, Nuremberg, Germany, March 2025 (3rd place)
+          - **RoboCup 2025**, Salvador, Brazil, July 2025 (4th place)
+
+    publications:
+      - number: "[1]"
+        title: "Real-Time Multimodal Signal Processing for HRI in RoboCup: Understanding a Human Referee"
+        authors:
+          - F. Ansalone
+          - F. Maiorana
+          - D. Affinita
+          - F. Volpi
+          - "*E. Bugli*"
+          - F. Petri
+          - M. Brienza
+          - V. Spagnoli
+          - V. Suriani
+          - D. Nardi
+          - D. D. Bloisi
+        journal: 11th Italian Workshop on Artificial Intelligence and Robotics (AIRO 2024)
+        date: 2024-11
+
+      - number: "[2]"
+        title: Semantic Audio-driven Understanding for Dynamic Humanoid Whole Body Control
+        authors:
+          - J. M. A. Marcelo
+          - M. Brienza
+          - "*E. Bugli*"
+          - L. Comito
+          - D. Nardi
+          - D. D. Bloisi
+          - V. Suriani
+        journal: "RoboCup 2026 International Symposium - accepted, oral presentation"
+        date: 2026-07
+
+      - number: "[3]"
+        title: Learning Vision-Based Dribbling for Humanoid Soccer via Privileged Representation Learning
+        authors:
+          - F. Maiorana
+          - V. Spagnoli
+          - "*E. Bugli*"
+          - F. Volpi
+          - D. Affinita
+          - V. Suriani
+          - D. Nardi
+          - L. Iocchi
+        journal: "RoboCup 2026 International Symposium - accepted, poster presentation"
+        date: 2026-07
+
+    projects:
+      - name: MPC with Single Rigid Body Dynamics
+        date: "2025"
+        summary: "Elective in Robotics [UR] - Gait generation framework using MPC on the single rigid body dynamics model of a humanoid robot."
+        highlights:
+          - Single Rigid Body (SRB) model, Model Predictive Control
+          - Footstep planner and foot trajectory generator
+          - Kalman Filter
+
+      - name: Humanoid Navigation using LDCBF
+        date: "2025"
+        summary: "Autonomous and Mobile Robotics - Path and gait planning with MPC using a discrete linear control barrier function for obstacle avoidance."
+        highlights:
+          - Linear Inverted Pendulum (LIP) model, MPC, Control Barrier Functions
+          - DBSCAN clustering, RRT* path planning
+
+      - name: MPC-PiNN applied to Quadrotors
+        date: "2025"
+        summary: "Elective in Robotics [UAV] - Physics-Informed Neural Networks to approximate quadrotor dynamics, combined with MPC for trajectory tracking."
+        highlights:
+          - Quadrotor dynamics model, Model Predictive Control
+          - Physics-Informed Neural Networks (PiNNs)
+
+      - name: Social and Rolling Kicks
+        date: "2025"
+        summary: "Research Topics in AI [HRI-RBC] - HRI task with keypoint-based human pose recognition and dynamic in-walk ball kicking for NAO robots."
+        highlights:
+          - Keypoint detection with MoveNet
+          - Football trajectory synchronization during locomotion
+          - Finite state machine behavior design
+
+      - name: Calibration of a Tricycle Robot
+        date: "2025"
+        summary: "Probabilistic Robotics - Calibration of kinematic parameters and sensor pose of a tricycle robot with Least Squares on manifolds."
+        highlights:
+          - Least Squares on Lie manifolds, real-world sensor data processing
+
+      - name: Bio-Heat PiNNs
+        date: "2024"
+        summary: "Medical Robotics - Real-time temperature distribution estimation in biological tissues via the Pennes Bio-Heat Equation with PiNNs."
+        highlights:
+          - Pennes Bio-Heat equation, Physics-Informed Neural Networks
+
+      - name: Walking Humanoid
+        date: "2024"
+        summary: "Reinforcement Learning - Trained a humanoid to walk using the Advantage Actor-Critic (A2C) algorithm."
+        highlights:
+          - Deep neural networks, A2C reinforcement learning
+
+    skills:
+      - label: Programming
+        details: Python, C, C++, MATLAB, Docker, ROS, Git
+      - label: OS
+        details: Linux (expert), macOS
+
+    languages:
+      - label: Italian
+        details: Native
+      - label: English
+        details: "Advanced, Cerficications : Cambridge FCE (B2), 2018"
+
+design:
+  theme: classic
+  colors:
+    name: rgb(0, 100, 50)
+    headline: rgb(0, 100, 50)
+    connections: rgb(0, 100, 50)
+    section_titles: rgb(0, 100, 50)
+    links: rgb(0, 100, 50)
+  section_titles:
+    space_above: 0.8cm
+  sections:
+    show_time_spans_in: []
+  templates:
+    education_entry:
+      degree_column: null
+      main_column: |-
+        **DEGREE_WITH_AREA**
+        INSTITUTION
+        SUMMARY
+        HIGHLIGHTS
+    experience_entry:
+      main_column: |-
+        **POSITION**
+        COMPANY
+        SUMMARY
+        HIGHLIGHTS
+        EVENTS
+    publication_entry:
+      main_column: |-
+        NUMBER **TITLE**
+        SUMMARY
+        AUTHORS
+        URL (JOURNAL)
+
+settings:
+  render_command:
+    output_folder: rendercv_output
